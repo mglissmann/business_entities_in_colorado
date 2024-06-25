@@ -1,0 +1,10 @@
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+*.csv
+*.json
+*.h5
+*.db
+*.sqlite
+*.parquet
