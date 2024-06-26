@@ -5,8 +5,14 @@ WHERE principalcountry IS NULL;
 
 -- Step 2: Standardize capitalization
 UPDATE colorado
-SET principalcountry = LOWER(principalcountry),
-    entityname = LOWER(entityname);
+SET 
+    agentprincipaladdress1 = UPPER(agentprincipaladdress1),
+    agentprincipalcity = UPPER(agentprincipalcity),
+    agentprincipalcountry = UPPER(agentprincipalcountry),
+    entityname = UPPER(entityname),
+    principaladdress1 = UPPER(principaladdress1),
+    principalcity = UPPER(principalcity),
+    principalcountry = UPPER(principalcountry);
 
 -- Step 3: Extract date from timestamp
 UPDATE colorado
