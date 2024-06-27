@@ -7,7 +7,7 @@ batch_size = 1000  # Number of records per batch
 offset = 0  # Starting point
 
 # Connect to SQLite database (or create it)
-conn = sqlite3.connect('data_colorado.db')
+conn = sqlite3.connect('business_entities.db')
 cursor = conn.cursor()
 
 # Fetch one record to determine the structure of the data
@@ -18,7 +18,7 @@ if response.status_code == 200:
         columns = sample_data[0].keys()
         # Create table based on the keys in the data
         cursor.execute(f'''
-        CREATE TABLE IF NOT EXISTS data (
+        CREATE TABLE IF NOT EXISTS colorado (
             {', '.join([f'{col} TEXT' for col in columns])}
         )
         ''')
