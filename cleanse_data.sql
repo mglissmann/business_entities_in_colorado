@@ -1,3 +1,5 @@
+-- database: /Users/Mark1/Documents/Data Science/business_entities_in_colorado/business_entities.db
+
 -- Step 1: Fill missing principalcountry values with 'US'
 UPDATE colorado
 SET principalcountry = 'US'
