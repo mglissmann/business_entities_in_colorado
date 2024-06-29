@@ -22,7 +22,8 @@ SELECT
 FROM (    
     SELECT
         entityid,
-        DATE(strftime('%Y', entityformdate) || '-01-01') as entityformyear
+        strftime('%Y', entityformdate) as entityformyear
     FROM colorado)
 GROUP BY entityformyear
 ORDER BY entityformyear ASC;
+
