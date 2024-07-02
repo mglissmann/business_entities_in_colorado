@@ -27,3 +27,10 @@ FROM (
 GROUP BY entityformyear
 ORDER BY entityformyear ASC;
 
+
+--------------------------
+-- Housekeeping queries --
+--------------------------
+
+--DROP TABLE IF EXISTS colorado;
+
