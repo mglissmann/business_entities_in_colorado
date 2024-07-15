@@ -16,6 +16,13 @@ WHERE entityformdate >= '1950-01-01' and entityformdate < '2000-01-01';
 
 SELECT *
 FROM colorado
-WHERE entityformdate >= '2000-01-01';
+WHERE entityformdate >= '2000-01-01' and entityformdate < '2010-01-01';
 
-select count(*) from colorado;
+SELECT *
+FROM colorado
+WHERE entityformdate > '2020-01-01';
+
+select 
+    *
+from colorado
+WHERE entityname LIKE '%Alteryx%';
