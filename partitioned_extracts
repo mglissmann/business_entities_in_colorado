@@ -1,0 +1,19 @@
+-- database: /Users/Mark1/Documents/Data Science/business_entities_in_colorado/business_entities.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+SELECT *
+FROM colorado
+WHERE entityformdate < '1900-01-01';
+
+SELECT *
+FROM colorado
+WHERE entityformdate >= '1900-01-01' and entityformdate < '1950-01-01';
+
+SELECT *
+FROM colorado
+WHERE entityformdate >= '1950-01-01' and entityformdate < '2000-01-01';
+
+SELECT *
+FROM colorado
+WHERE entityformdate >= '2000-01-01';
